@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CatchAMovie</title>
+
+    <!-- WinJS references -->
+    <!-- At runtime, ui-themed.css resolves to ui-themed.light.css or ui-themed.dark.css 
+    based on the user’s theme setting. This is part of the MRT resource loading functionality. -->
+    <link href="/css/ui-themed.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="css/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.js"></script>
+    <link href="css/superslides.css" rel="stylesheet" />
+    <script src="Scripts/semantic.min.js"></script>
+    <link href="css/semantic.min.css" rel="stylesheet" />
+    <script src="Scripts/handlebars.min.js"></script>
+
+
+
+    <!-- CatchAMovie references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="js/App.js"></script>
+    
+    <script>
+        var App;
+        $.ajax({
+
+            url: "/data/test_data.json",
+            dataType: 'json',
+            async: false,
+            success: function (data) {
+                jsonData = data;
+                App = new AppHandler(jsonData);
+
+            }
+
+        })
+
+
+
+
+        $(document).ready(function () {
+            
+            var movie = App.GetMovie(0);
+            var allMovies = App.GetAllMovies();
+
+            function AddStars(numOfStars){
+
+                var out = "";
+
+                for (var i = 0; i < numOfStars; i++) {
+                    out = out + '<i class="icon active"></i>';
+                }
+
+                for (var i = 0; i < (5- numOfStars); i++) {
+                    out = out + '<i class="icon"></i>';
+                }
+
+                return out;
+            }
+                
+         
+            source = $("#firstPanel").html();
+            template = Handlebars.compile(source);
+            var movieData = [];
+            for (var i = 0 ; i < allMovies.length ; i++) {
+                movie = allMovies[i];
+                movieData.push({ title: movie.title, plot: movie.plot, screenings: movie.screenings, addstars: AddStars(5), back_image: movie.background_image });
+            }
+
+            var context = { movies: movieData };
+            var html = template(context);
+
+            $("#firstPanel").html(html);
+
+            $('#slides').superslides();
+        });
+
+       
+    </script>
+</head>
+<body class="phone">
+    <div id="slides">
+        <ul class="slides-container" id ="firstPanel" style="list-style-position: outside;">
+            {{#each movies}}
+            <li>    
+                <div id="firstPanel">
+                    <img src="{{back_image}}" style="top: 23px;" />
+                    <div class="container" style="height: 635.66px;">
+                        <div class="ui grid" style="height: 760px; width: 406px;">
+                            <div class="three wide column" style="height: 202px;">
+                                <div class="ui segment ContentFormatting" style="width: 366px; left: 22px; height: 256px; opacity:0.7
+					;">
+                                    <b style="font-style: oblique; font-size-adjust: none; width: 159px; height: 48.37px;">{{title}}</b>
+                                    <div class="ui rating win-type-interactive stars" data-rating="4">
+                                        {{{addstars}}}
+                                    </div>
+                                    <p class="plot screening" style="width: 307px; height: 22px;">Screenings: In <a href="http://www.google.com/movies?q={{title}}" >{{screenings}} </a></p>
+                                   <p class="plot" style="height: 73px; width: 324.02px;">{{plot}} </p>
+                                    <a class="trailer" href="https://www.youtube.com/results?search_query=trailer+{{title}}+official" style="width: 121px; height: 28px; position: relative; left: 196px; top: -21.94px;">Watch Trailer</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+ </li>
+            {{/each}}
+          
+        </ul>
+        <nav class="slides-navigation">
+            <a href="#" class="next">Next</a>
+            <a href="#" class="prev">Previous</a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bin\Debug\ReverseMap\resources.pri
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bin\Debug\AppxManifest.xml
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bin\Debug\CatchAMovie.build.appxrecipe
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\priconfig.xml
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\priconfig.xml.intermediate
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\layout.resfiles
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\layout.resfiles.intermediate
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\resources.resfiles
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\resources.resfiles.intermediate
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\pri.resfiles
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\pri.resfiles.intermediate
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\qualifiers.txt
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\qualifiers.txt.intermediate
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\raghib\documents\visual studio 2013\Projects\CatchAMovie\CatchAMovie\bld\Debug\ProjectArchitectures.txt

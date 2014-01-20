@@ -1,0 +1,46 @@
+[
+  {
+    "title": "IRONMAN",
+    "plot": "You know what it is",
+    "rating": "5",
+    "screenings": [
+      "30 min ",
+      "1 hour ",
+      "2 hours "
+    ],
+    "background_image": "/data/ironman.jpg"
+  },
+  {
+    "title": "GUARDIAN-OF-THE-GALAXY",
+    "plot": "Light years from Earth, 26 years after being abducted...",
+    "rating": "3",
+    "screenings": [
+      "30 min ",
+      "1 hour ",
+      "2 hours "
+    ],
+    "background_image": "/data/GOOG.jpg"
+  },
+  {
+    "title": "TMNT",
+    "plot": "A group of mutated warriors face off against an evil kingpin who wants to take over New York.",
+    "rating": "5",
+    "screenings": [
+      "30 min ",
+      "1 hour ",
+      "2 hours "
+    ],
+    "background_image": "/data/tmnt.jpg"
+  },
+  {
+    "title": "THE-AMAZING-SPIDERMAN",
+    "plot": "Peter Parker finds a clue ....",
+    "rating": "5",
+    "screenings": [
+      "30 min ",
+      "1 hour ",
+      "2 hours "
+    ],
+    "background_image": "/data/spiderman.jpg"
+  }
+]

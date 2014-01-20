@@ -1,0 +1,32 @@
+﻿body {
+}
+
+.ContentFormatting {
+	color: black;
+	top: -13px;
+}
+
+
+
+.MiddleColumn {
+	font-size: 10px;
+	color: #242B2E;
+	background-color: #D3CA0F;
+}
+
+.LastColumn {
+	font-size: 10px;
+	color: #E65F12;
+}
+
+.plot {
+	font-size: 15px;
+}
+
+.screening {
+	font-size: 16px;
+}
+
+.trailer {
+	font-size: 22px;
+}
