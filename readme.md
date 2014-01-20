@@ -1,4 +1,4 @@
-#CatchAMovie :movie_camera:
+# :movie_camera: CatchAMovie 
 > A Windows 8 app written in JavaScript
 
 <p align="center">
